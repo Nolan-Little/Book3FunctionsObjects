@@ -107,3 +107,10 @@ function addEvent(name, location, date, time){
   console.log(campaign.eventCalender);
 }
 addEvent("party", "Here","tomorrow", "forever");
+
+function changePlatform(platform, stance) {
+  campaign.platform[platform] = stance;
+  console.log(campaign.platform);
+}
+
+changePlatform("taxes", "Less.");
